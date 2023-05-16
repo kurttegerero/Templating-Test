@@ -14,7 +14,7 @@
     #17af72,
     #93e986,
     #93e986
-  );
+  )!important;
 
   &:hover {
     background-position: 100% 0;
@@ -28,4 +28,8 @@
   &-text {
     @apply text-gray-secondary transition-colors;
   }
+}
+
+.delete-btn{
+    @apply absolute -top-2 right-0 md:top-[initial] md:-left-10 md:bottom-2.5 cursor-pointer transition-colors hover:text-red-600;
 }

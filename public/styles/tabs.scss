@@ -1,13 +1,18 @@
-.tab {
-  @apply pt-4 pb-5 px-6 transition-colors font-medium hover:text-green-primary;
+.tabs {
+  @apply w-full;
+  .tab {
+    @apply pt-4 pb-5 px-2 md:px-6 transition-colors font-medium hover:text-green-primary text-sm md:text-base;
+  }
 }
 
 .active {
   @apply bg-white shadow-md relative transition-all hover:text-blue-secondary after:bg-white after:h-4 after:content-normal after:-bottom-4 after:left-0 after:right-0 after:absolute;
 }
 
-.sub-tab {
-  @apply px-7 py-6 pb-4;
+.sub-tabs {
+  .sub-tab {
+    @apply px-5 md:px-7 py-4 md:py-6 pb-4 text-sm;
+  }
 }
 
 .sub-active {

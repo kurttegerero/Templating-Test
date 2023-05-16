@@ -1,0 +1,8 @@
+table {
+  th {
+    @apply font-normal text-gray-secondary text-left p-3 whitespace-nowrap;
+  }
+  td {
+    @apply p-3 relative whitespace-nowrap after:absolute after:h-[1px] after:w-full after:bg-gray-quaternary after:bottom-0;
+  }
+}

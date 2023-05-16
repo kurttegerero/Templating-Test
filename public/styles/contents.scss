@@ -1,0 +1,10 @@
+.content-header {
+  @apply flex flex-col py-8 px-0 space-y-4;
+
+  @apply md:flex-row md:justify-between md:items-center  md:px-6  md:space-y-0;
+
+  &-right {
+    @apply flex flex-col md:flex-row justify-between md:space-x-6 space-y-4 md:space-y-0;
+    @apply md:justify-normal;
+  }
+}
