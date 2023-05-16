@@ -1,0 +1,31 @@
+.btn-primary {
+  @apply border-2 px-7 py-1.5 text-xs font-medium rounded-md transition-colors;
+
+  @apply hover:bg-gray-quaternary hover:border-gray-quaternary;
+}
+
+.btn-special {
+  @apply px-11 py-4 rounded-md text-sm font-medium text-white transition-all;
+
+  background-size: 300% 100%;
+  background-image: linear-gradient(
+    to right,
+    #93e986,
+    #17af72,
+    #93e986,
+    #93e986
+  );
+
+  &:hover {
+    background-position: 100% 0;
+  }
+}
+
+.top-btn {
+  @apply flex items-center space-x-1.5 text-xs font-medium text-gray-secondary transition-colors;
+  @apply hover:text-green-primary;
+
+  &-text {
+    @apply text-gray-secondary transition-colors;
+  }
+}

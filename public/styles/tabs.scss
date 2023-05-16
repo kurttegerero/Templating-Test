@@ -1,0 +1,21 @@
+.tab {
+  @apply pt-4 pb-5 px-6 transition-colors font-medium hover:text-green-primary;
+}
+
+.active {
+  @apply bg-white shadow-md relative transition-all hover:text-blue-secondary after:bg-white after:h-4 after:content-normal after:-bottom-4 after:left-0 after:right-0 after:absolute;
+}
+
+.sub-tab {
+  @apply px-7 py-6 pb-4;
+}
+
+.sub-active {
+  @apply relative after:w-full after:h-1 after:absolute after:left-0 after:-bottom-1 after:rounded-sm;
+
+  text-shadow: 0.2px 0.2px 0 #15253e;
+
+  &::after {
+    background: linear-gradient(90deg, #17af72 0%, #93e986 100%);
+  }
+}

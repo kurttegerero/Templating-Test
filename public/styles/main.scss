@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .container {
+    @apply max-w-8xl;
+  }
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+a,
+span {
+  @apply font-sans text-blue-secondary;
+}
+
+input {
+  @apply border;
+}
+
+h1 {
+  @apply text-2xl font-medium;
+}
+
+
+.switch-field {
+  @apply flex overflow-hidden rounded-md bg-gray-tertiary;
+
+  input {
+    clip: rect(0, 0, 0, 0);
+
+    @apply absolute h-1 w-1 overflow-hidden cursor-pointer;
+  }
+
+  label {
+    @apply cursor-pointer px-6 py-1 border-2 border-transparent rounded-md text-center transition-all w-28 flex items-center justify-center text-sm text-gray-secondary;
+  }
+
+  input:checked + label {
+    @apply bg-white border-2 border-gray-quaternary shadow-none text-blue-secondary;
+  }
+}
+
+
+
+table {
+  th {
+    @apply font-normal text-gray-secondary text-left p-3 whitespace-nowrap;
+  }
+  td {
+    @apply p-3 relative whitespace-nowrap after:absolute after:h-[1px] after:w-full after:bg-gray-quaternary after:bottom-0;
+  }
+}
