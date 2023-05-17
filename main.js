@@ -58,6 +58,8 @@ radioButtons.forEach((radioButton) => {
   });
 });
 
+// Add Row
+
 const addRowBtn = document.getElementById("addRowBtn");
 
 addRowBtn.addEventListener("click", (event) => {

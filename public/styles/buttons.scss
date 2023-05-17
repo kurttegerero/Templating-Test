@@ -5,15 +5,15 @@
 }
 
 .btn-special {
-  @apply px-11 py-4 rounded-md text-sm font-medium text-white transition-all;
+  @apply px-11 py-4 rounded-md text-sm font-medium text-white transition-all duration-500;
 
   background-size: 300% 100%;
   background-image: linear-gradient(
     to right,
     #93e986,
     #17af72,
-    #93e986,
-    #93e986
+    #17af72,
+    #17af72
   )!important;
 
   &:hover {
