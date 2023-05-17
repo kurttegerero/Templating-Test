@@ -33,17 +33,24 @@
 
   select {
     @apply bg-white border rounded-md !px-3.5 !py-2.5;
+    @apply focus:outline-none focus:border-green-primary focus:ring-1 focus:ring-green-primary;
+    @apply appearance-none;
+
+    background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevron-down'><polyline points='6 9 12 15 18 9'></polyline></svg>") no-repeat;
+    background-position: calc(100% - 0.75rem) center !important;
   }
 
   input {
     @apply bg-white border rounded-md !px-3.5 !py-[8.5px];
+    @apply focus:outline-none focus:border-green-primary focus:ring-1 focus:ring-green-primary;
+    
   }
 
   .right-label {
     @apply relative w-full;
 
     &-text {
-        @apply absolute top-0 right-0 px-4 h-full bg-gray-quaternary rounded-tr-md rounded-br-md flex items-center text-sm;
+        @apply absolute top-[1px] right-[1px] h-[41px] px-4 bg-gray-quaternary rounded-tr-md rounded-br-md flex items-center text-sm;
     }
   }
 
@@ -55,7 +62,9 @@
     }
 
     select {
-        @apply absolute top-0 right-0 !rounded-tl-none !rounded-bl-none max-w-[10rem];
+        @apply absolute top-[1px] right-[1px] !py-0 !rounded-tl-none !rounded-bl-none w-[6rem] h-[41px] flex items-center;
+
+        background-position: calc(100% - 0.2rem) center !important;
     }
   }
 }

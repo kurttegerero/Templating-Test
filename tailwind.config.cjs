@@ -20,6 +20,9 @@ module.exports = {
       },
     },
     extend: {
+      boxShadow: {
+        'focus': 'rgba(15, 172, 110, 0.5) 0px 0px 0px 4px',
+      },
       maxWidth: {
         "8xl": toRem(1536),
       },
